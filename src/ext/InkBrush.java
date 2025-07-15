@@ -1,12 +1,16 @@
 package ext;
 
 public class InkBrush extends Pen {
+	
+	//繼承父類別Pen
 	public InkBrush() {
 		super();
 	}
 	public InkBrush(int price, String brand) {
 		super(price, brand);
 	}
+	
+	//override父類別的抽象方法
 	@Override
 	public void write() {
 		System.out.println("實際售價：" + getPrice() * 0.9 );
